@@ -8,7 +8,7 @@ public class Classifica {
         classifica = new ArrayList();
     }
 
-    public void add(Cavallo c){
+    synchronized public void add(Cavallo c){
         classifica.add(c);
     }
 

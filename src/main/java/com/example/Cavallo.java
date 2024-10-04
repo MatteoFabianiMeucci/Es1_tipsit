@@ -18,6 +18,9 @@ public class Cavallo extends Thread{
         numeroGara = i;
         this.c = c;
     }
+    void addClassifica(){
+        c.add(this);
+    }
 
     public void run(){
         try {
@@ -28,6 +31,6 @@ public class Cavallo extends Thread{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        c.add(this);
+        this.addClassifica();
     }
 }
